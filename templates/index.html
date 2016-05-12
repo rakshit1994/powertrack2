@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Power Track Query</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+  <body>
+  <center>
+  <table style="padding-top:0%;">
+      <form action="" method="POST" id="testformid">
+        <table style="padding-top:0%;">
+      <tr><td><h3>Keywords/Includes:</h3><textarea name="keywords" value={{request.form.keywords}} cols="35" wrap="soft"></textarea></td></tr>
+      <tr><td><h3>Context:</h3><textarea name="context" value={{request.form.context}} cols="35" wrap="soft"></textarea></td></tr>
+      <tr><td><h3>Excludes:</h3><textarea name="excludes" value={{request.form.excludes}} cols="35" wrap="soft"></textarea></td></tr>
+        </table>
+  {{final}}
+</table>
+</center>
+<center>
+<br>
+
+    <br>
+          <center><input type="submit" value="Search"></input><center>
+      </form>
+     
+
+  </body>
+
+
+
+</html>
